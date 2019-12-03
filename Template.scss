@@ -1,0 +1,23 @@
+
+@mixin BandBlock($height)
+{
+  float:none;
+  width: 100%;
+  display: block;
+  height: $height;
+  line-height: $height;
+}
+
+@mixin Block($width, $height)
+{
+  float:none;
+  display: block;
+  width: $width;
+  height: $height;
+}
+
+@mixin ImageSkin($ImageName)
+{
+  background-image: url('.//' + $ImageName);
+  background-size:cover;
+}

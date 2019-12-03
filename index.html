@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GetReady</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" charset="utf-8" src="MainScript.js"></script>
+    <link rel="stylesheet" href="StyleSheet.min.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <div class = "Header">
+      <div class = "TopBunner"></div>
+      <a href="https://www.opto.co.jp/">
+        <div class = "OpticonLogo"></div>
+      </a>
+    </div>
+
+    <div class = "Border"></div>
+
+    <form name="CommandForm" id="Form" action="">
+      <input type="text" id = "Command" name="name" size="30" maxlength="200" value="ここにユニバーサルコマンドを入力してください" />
+      <input type="button" value="Push" onclick=" PublishOpticonQR();"/>
+    </form>
+    <div class="QR" id = "QR"></div>
+
+
+  </body>
+</html>

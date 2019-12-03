@@ -1,0 +1,51 @@
+@import "./Template.scss";
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Header
+{
+  @include BandBlock(100px);
+  .TopBunner
+  {
+    @include Block(850px,100px);
+    @include ImageSkin("TopBunner.png");
+    float: left;
+  }
+
+  .OpticonLogo
+  {
+    @include Block(225px,30px);
+    @include ImageSkin("OpticonLogo.png");
+
+    margin: 40px 10px;
+    float: right;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+
+    &:active
+    {
+
+    }
+  }
+}
+
+.Border
+{
+  @include BandBlock(2px);
+  float: left;
+  background-color: #000000
+}
+
+.QR
+{
+  @include Block(160px,160px);
+  text-align: center;
+  background-image: url("http://chart.apis.google.com/chart?cht=qr&choe=Shift_JIS&chs=160x160&chld=h&chl=%40MENU_OPTO%40ZZ%40ZZ%40OTPO_UNEM%40");
+}
